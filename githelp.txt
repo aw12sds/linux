@@ -1,0 +1,11 @@
+linux set a repo
+git commit -m "first commit"
+git remote add origin https://github.com/aw12sds/linux.git
+git push -u origin master
+
+1.get clone 
+2.get status
+3.git add
+4.git commit -m ''
+5.git status
+6.git push
