@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 import os
-
+import time
 
     
 def judge():
     print("1.statue")
     print("2.install")
     print("3.end")
+    print("4.chang page")
     
     b=input("please input:")
     a=str(b)
@@ -15,15 +16,43 @@ def judge():
       statue()
     elif(a=='2'):
       install()
+    elif(a=='4'):
+      changpage()
     else:
       print("end")    
     
+def changpage():
+    print("1.discuz")
+    print("2.php")
+    page=input("please input:")
+    page1=str(page)
+    path=0
+    if(page1=="1"):
+      path='DocumentRoot "/opt/lampp/htdocs/rd/upload"'
+    elif(page1=="2"):
+      path='DocumentRoot "/opt/lampp/htdocs"'
+    rewrite(path)
+
+def rewrite(path):
+    
+    f=open('/opt/lampp/etc/httpd.conf','r+')
+    flist=f.readlines()
+    flist[228]=path+'\n'
+    print(path)
+    f=open('/opt/lampp/etc/httpd.conf','w+')
+    f.writelines(flist)
+
+
+
 def install():
     print("1.git")
     os.system("git")
     print("2.shadowsock")
     print("3.serverSpeeder")
-    print("4.git config") 
+    
+    print("4.git config")
+    print("5.php")
+ 
     install=str(input("please input:"))
     if(install=="1"):
       os.system("sudo yum install git")
@@ -33,6 +62,12 @@ def install():
       print("a=3")
     elif(install=='4'):
       os.system("git config--global user,name 'aw12sds'")
+    elif(install=='5'):
+      os.system("wget 'https://www.apachefriends.org/xampp-files/7.1.9/xampp-linux-x64-7.1.9-0-installer.run'")
+      print("chmod a+x")
+      print("run script")
+      print("vi /opt/lampp/etc/extra/httpd-xampp.conf")
+      print("/opt/lampp/lampp status")
 
     else:
       print("end")
