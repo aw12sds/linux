@@ -1,0 +1,62 @@
+1.reset pass
+  mysql> set password for root@localhost = password('123');
+2.log
+ mysql -uroot -p  -h127.0.0.1 
+3.exit
+  exit;
+4.database
+  create database hao;
+  drop database hao;
+  show databases;
+  use hao;
+5.table
+  create table student
+(
+	sno 		int,
+	name		varchar(20),
+	age		int,
+	gender		char(3),
+	birthday	date,
+create table student
+(
+	sno 		int,
+	name		varchar(20),
+	age		int,
+	gender		char(3),
+	birthday	date,
+	phone		char(11),
+	score		decimal(4,1)
+)character set  gbk  |  utf8;
+
+show  tables;
+5.dml
+  insert into student(name, age,gender) values(‘jack’, 25, ‘男’);
+  delete from student where name=’jack’
+  delete from student where gender=’男’ and  age > 25;
+
+  update stu set sal=sal+500 where sal>3000;
+  
+  select sno, name, age from stu;
+  select distinct * from stu; 
+  select  concat(ename, job) from emp;
+  分组查询
+  select  deptno,  count(*)  from emp group by deptno;
+  select  列… , 聚合函数
+from  表1, 表2…
+[where  conditon]—表示对表中每一行数据进行过滤
+[group  by   列1, …] –按照指定的列分组
+[having  condtion] – 对分组后的每一组进行条件过滤
+[order  by  列, 别名] – 按照某列进行排序
+[limit  start_index,  offset]—显示指定的数据
+
+  多表查询
+ select  emp.deptno, dname 
+from emp, dept 
+where emp.deptno = dept.deptno and ename='aa'
+
+  内连接
+  select  d.dname
+from  emp  e  inner  join  dept  d  on  e.deptno=d.deptno
+where  e.ename ='aa'
+
+

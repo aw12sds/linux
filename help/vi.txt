@@ -1,0 +1,12 @@
+向下查找 / 回车  continue  n
+向上查找 ? 回车  continue n
+
+替换  s
+s/vivi/sky/  第一个vivi为sky
+s/viv/sky/g  所以viv为sky
+
+nu
+:set nu
+:set nonu
+
+
