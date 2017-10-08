@@ -106,8 +106,8 @@ def statue():
     elif(statue=='3'):
       print("*"*40)
       os.system("python -V")
-      os.system("java -V")
-      os.system("gcc")
+      os.system("java -version")
+      os.system("gcc --version")
       print("*"*40)
       pyversion=input("reinstall py?y/n:")
     elif(statue=='4'):
