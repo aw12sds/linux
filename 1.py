@@ -9,6 +9,7 @@ def judge():
     print("3.end")
     print("4.chang page")
     print("5.restart xmapp")
+    print("6.grive")
     
     b=input("please input:")
     a=str(b)
@@ -21,6 +22,8 @@ def judge():
       changpage()
     elif(a=='5'):
       os.system("/opt/lampp/lampp restart")
+    elif(a=='6'):
+      os.system("grive -p /root/py")
     else:
       print("end")    
     
