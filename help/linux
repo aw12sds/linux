@@ -6,3 +6,8 @@ u = display the process's user/owner
 x = also show processes not attached to a terminal
 
 ps aux|grep 
+
+killall java
+
+df磁盘
+du 
