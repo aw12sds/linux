@@ -73,6 +73,7 @@ def install():
       print("chmod a+x")
       print("run script")
       print("vi /opt/lampp/etc/extra/httpd-xampp.conf")
+ #将Require local改成Require all granted 
       print("/opt/lampp/lampp status")
 
     else:
