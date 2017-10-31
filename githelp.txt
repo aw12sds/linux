@@ -10,3 +10,11 @@ git push -u origin master
 4.git commit -m ''
 5.git status
 6.git push
+
+
+
+git init
+git config user.name "someone"
+git config user.email "someone@someplace.com"
+git add *
+git commit -m "some init msg"
