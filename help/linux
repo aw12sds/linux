@@ -11,3 +11,5 @@ killall java
 
 df磁盘
 du 
+
+cp -R file1 file2
