@@ -58,6 +58,7 @@ def install():
     
     print("4.git config")
     print("5.php")
+    print("6.python3")
  
     install=str(input("please input:"))
     if(install=="1"):
@@ -75,7 +76,9 @@ def install():
       print("vi /opt/lampp/etc/extra/httpd-xampp.conf")
  #将Require local改成Require all granted 
       print("/opt/lampp/lampp status")
-
+    elif(install=='6'):
+      os.system("sudo yum -y install python36u")
+      os.system("sudo yum -y install python36u-pip")
     else:
       print("end")
 
