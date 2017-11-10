@@ -1,2 +1,6 @@
 apache 
 mysql /opt/lampp/bin/mysql
+
+
+apache是以精灵线程启动的
+chown daemon:daemon uploads才好更新插件
