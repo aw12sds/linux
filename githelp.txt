@@ -18,3 +18,18 @@ git config user.name "someone"
 git config user.email "someone@someplace.com"
 git add *
 git commit -m "some init msg"
+
+
+
+windwos git
+1.https://git-scm.com/download/win
+2.launch bash
+3.git config --global user.name "aw12sds"
+  git config --global user.email jdmossmanson@163.com
+  git clone https://github.com/aw12sds/spider.git
+  
+4.修改
+cd到目录
+  git add *.*
+  git status
+  git commit -m "some init msg"
