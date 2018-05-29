@@ -15,3 +15,10 @@ del /f /s /q %systemdrive%\*._mp
 del /f /s /q %systemdrive%\*.log 
 del /f /s /q %systemdrive%\*.old 
 del /f /s /q %windir%\*.bak 
+
+
+擦洗
+cipher /w:c
+cipher /w:D
+cipher /w:E
+
