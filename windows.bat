@@ -8,4 +8,5 @@ set "Ymd=%date:~,4%%date:~5,2%%date:~8,2%"
 
 
 
-=
+=删除回收站
+del /f /s /q %systemdrive%\recycled\*.*
