@@ -1,1 +1,3 @@
 sudo ssserver -p 1025 -k 123456aca -m rc4-md5 --user nobody -d start
+bbr
+serverSpeeder
